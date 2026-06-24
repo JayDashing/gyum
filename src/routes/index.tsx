@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import logo from "@/assets/gyum-logo.png";
+import banner from "@/assets/gyum-banner.png.asset.json";
+import logoIcon from "@/assets/gyum-icon.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Mail, Lock } from "lucide-react";
-import logo from "@/assets/gyum-logo.png";
+import banner from "@/assets/gyum-banner.png.asset.json";
 import { useState, type FormEvent } from "react";
 
 export const Route = createFileRoute("/signin")({
