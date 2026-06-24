@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import banner from "@/assets/gyum-banner.png.asset.json";
 import logoIcon from "@/assets/gyum-icon.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -27,11 +26,6 @@ function Welcome() {
             className="mx-auto h-44 w-44 rounded-3xl shadow-[var(--shadow-brand)] md:h-56 md:w-56"
           />
         </div>
-        <img
-          src={banner.url}
-          alt="GyUM — Health and Wellness Management System"
-          className="mt-8 w-full max-w-xl animate-[fade-in_0.8s_ease-out_0.15s_both]"
-        />
         <p className="mt-6 max-w-md animate-[fade-in_0.8s_ease-out_0.3s_both] text-base text-muted-foreground md:text-lg">
           Your personal health &amp; wellness companion built exclusively for university students and faculty
         </p>
