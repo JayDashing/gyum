@@ -28,7 +28,7 @@ function HealthPage() {
         <div className="mt-1 text-2xl font-bold">Great Job, 'Ga!</div>
       </section>
 
-      <section className="card-soft mt-6 p-5">
+      <section className="card-soft mt-6 p-5 animate-slide-up">
         <h2 className="font-bold">Weekly Activity</h2>
         <div className="mt-5 flex items-end justify-between gap-2">
           {days.map((d, i) => (
@@ -36,7 +36,11 @@ function HealthPage() {
               <div className="flex h-32 w-full max-w-[36px] items-end overflow-hidden rounded-full bg-muted">
                 <div
                   className="w-full rounded-full bg-primary"
-                  style={{ height: `${d.v * 100}%` }}
+                  style={{
+                    height: `${d.v * 100}%`,
+                    animation: `grow-bar 0.9s cubic-bezier(0.4,0,0.2,1) ${0.1 + i * 0.08}s both`,
+                    ["--bar-h" as string]: `${d.v * 100}%`,
+                  } as React.CSSProperties}
                 />
               </div>
               <span className={"text-xs " + (i === 6 ? "font-bold text-primary" : "text-muted-foreground")}>
@@ -61,7 +65,7 @@ function MetricCard({
   icon: Icon, label, big, sub,
 }: { icon: typeof Heart; label: string; big: string; sub: string }) {
   return (
-    <div className="card-soft p-5">
+    <div className="card-soft lift animate-pop-in p-5">
       <Icon className="h-5 w-5 text-primary" />
       <div className="mt-3 text-sm text-muted-foreground">{label}</div>
       <div className="mt-1 text-2xl font-bold">{big}</div>
