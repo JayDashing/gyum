@@ -17,7 +17,7 @@ const workouts = [
 function HomePage() {
   return (
     <AppLayout>
-      <section className="brand-gradient rounded-2xl p-6 shadow-[var(--shadow-brand)]">
+      <section className="brand-gradient animate-slide-up rounded-2xl p-6 shadow-[var(--shadow-brand)]">
         <h1 className="text-2xl font-bold">Welcome back, 'Ga!</h1>
         <p className="mt-1 text-sm opacity-90">Let's achieve your fitness goals today</p>
       </section>
