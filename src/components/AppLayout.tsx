@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Home, Calendar, Activity, BarChart3, User, Bell } from "lucide-react";
-import logo from "@/assets/gyum-logo.png";
+import logoIcon from "@/assets/gyum-icon.png.asset.json";
 import type { ReactNode } from "react";
 
 const nav = [
@@ -17,11 +17,11 @@ export function AppLayout({ children }: { children: ReactNode }) {
       {/* Top bar */}
       <header className="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-8">
-          <Link to="/home" className="flex items-center gap-2">
-            <img src={logo} alt="GyUM" width={32} height={32} className="h-8 w-8" />
+          <Link to="/home" className="flex items-center gap-2 transition-transform hover:scale-105">
+            <img src={logoIcon.url} alt="GyUM" width={36} height={36} className="h-9 w-9 rounded-md shadow-sm" />
             <span className="text-xl font-bold tracking-tight">
-              <span className="text-primary">Gy</span>
-              <span className="text-foreground">UM</span>
+              <span className="text-foreground">Gy</span>
+              <span className="text-primary">UM</span>
             </span>
           </Link>
           <nav className="hidden items-center gap-1 md:flex">

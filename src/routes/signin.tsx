@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Mail, Lock } from "lucide-react";
-import logo from "@/assets/gyum-logo.png";
+import banner from "@/assets/gyum-banner.png.asset.json";
 import { useState, type FormEvent } from "react";
 
 export const Route = createFileRoute("/signin")({
@@ -21,12 +21,8 @@ function SignIn() {
   return (
     <div className="flex min-h-screen items-center justify-center px-4 py-10">
       <div className="w-full max-w-md">
-        <div className="flex flex-col items-center text-center">
-          <img src={logo} alt="GyUM" width={64} height={64} className="h-16 w-16" />
-          <div className="mt-2 text-2xl font-bold">
-            <span className="text-primary">Gy</span>
-            <span>UM</span>
-          </div>
+        <div className="flex flex-col items-center text-center animate-[fade-in_0.5s_ease-out]">
+          <img src={banner.url} alt="GyUM" className="h-14 w-auto" />
           <h1 className="mt-6 text-3xl font-bold tracking-tight">Welcome Back</h1>
           <p className="mt-2 text-sm text-muted-foreground">
             Sign in to continue your fitness journey
