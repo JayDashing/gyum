@@ -83,6 +83,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Your personal fitness companion built exclusively for university students and faculty." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "GyUM — University Fitness Tracker" },
+      { name: "twitter:description", content: "Your personal fitness companion built exclusively for university students and faculty." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/304540d9-ed0f-4dfe-b28f-8d008101e804/id-preview-02689678--c83c2fc7-5847-40e1-ac78-8045539e25f2.lovable.app-1782275844708.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/304540d9-ed0f-4dfe-b28f-8d008101e804/id-preview-02689678--c83c2fc7-5847-40e1-ac78-8045539e25f2.lovable.app-1782275844708.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
